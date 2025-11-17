@@ -54,4 +54,4 @@ Backend-разработчик на Java. Пишу сервисы на **Spring 
 
 ## 📫 Контакты
 
-Почта для рабочих предложений: **your_email@example.com**
+Почта для рабочих предложений: **sergey.javadev@mail.ru**
