@@ -6,7 +6,7 @@ Backend-разработчик на Java. Пишу сервисы на **Spring 
 
 ## 🔧 Технологии
 
-- **Ядро:** Java 21, Spring Boot 3, Spring MVC  
+- **Ядро:** Java 17, Spring Boot 3, Spring MVC  
 - **Безопасность:** Spring Security 6, JWT (access/refresh), роли, email-подтверждение  
 - **REST и документация:** REST API (JSON, валидные HTTP-коды, валидация, единый формат ошибок), Swagger / OpenAPI (springdoc-openapi)  
 - **Данные:** Spring Data JPA, PostgreSQL, H2, миграции с Flyway  
@@ -45,10 +45,9 @@ Backend-разработчик на Java. Пишу сервисы на **Spring 
 
 ## 🔍 Что я ищу
 
-Открыт к ролям:
-
-- **Junior Java Backend Developer**  
-- **Оплачиваемая стажировка (remote / part-time)**
+- **Открыт к небольшим backend-задачам и проектному формату.**  
+- **Java / Spring Boot backend:
+REST API, auth/roles, PostgreSQL, Flyway, Swagger/OpenAPI, Docker, bugfix, tests.**
 
 ---
 
