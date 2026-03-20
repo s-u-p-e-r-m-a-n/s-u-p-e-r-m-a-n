@@ -1,6 +1,6 @@
 # 👋 Привет, я Sergey
 
-Backend-разработчик на Java. Пишу сервисы на **Spring Boot** с упором на продакшн-подход: модульная архитектура, миграции БД, тесты, Docker, CI, документированное REST API.
+Java backend developer. Building backend modules for web services: authentication, roles, REST API, PostgreSQL and Docker.
 
 ---
 
