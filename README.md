@@ -1,6 +1,10 @@
-# 👋 Привет, я Sergey
+# Привет, я Sergey
 
-Java backend developer. Building backend modules for web services: authentication, roles, REST API, PostgreSQL and Docker.
+Java backend developer. Building backend services with Spring Boot, PostgreSQL and Docker.
+
+## Main showcase
+- **spring-auth-service** — standalone authentication service with JWT, roles, PostgreSQL, Swagger, Docker and tests
+- **rent-apartment-app** — main monorepo in active development
 
 ---
 
@@ -41,13 +45,6 @@ Java backend developer. Building backend modules for web services: authenticatio
 - **контейнеризацию** (Docker, docker-compose) и **CI в GitHub Actions** для сборки и прогона тестов
 
 Проект в активной разработке: по мере свободного времени добавляю новые сценарии и улучшаю архитектуру.
----
-
-## 🔍 Что я ищу
-
-- **Открыт к небольшим backend-задачам и проектному формату.**  
-- **Java / Spring Boot backend:
-REST API, auth/roles, PostgreSQL, Flyway, Swagger/OpenAPI, Docker, bugfix, tests.**
 
 ---
 
