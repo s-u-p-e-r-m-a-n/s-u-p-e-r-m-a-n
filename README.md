@@ -1,53 +1,73 @@
 # Привет, я Sergey
 
-Java backend developer. Building backend services with Spring Boot, PostgreSQL and Docker.
+Java backend developer. Разрабатываю backend-сервисы и backend-модули на Spring Boot с упором на authentication, roles, REST API, PostgreSQL и Docker.
 
-## Main showcase
-- **spring-auth-service** — standalone authentication service with JWT, roles, PostgreSQL, Swagger, Docker and tests
-- **rent-apartment-app** — main monorepo in active development
+* * *
 
----
+## 🚀 Главная витрина
 
-## 🔧 Технологии
+### [spring-auth-service](https://github.com/s-u-p-e-r-m-a-n/spring-auth-service)
+Standalone backend-сервис аутентификации и авторизации на Spring Boot.
 
-- **Ядро:** Java 17, Spring Boot 3, Spring MVC  
-- **Безопасность:** Spring Security 6, JWT (access/refresh), роли, email-подтверждение  
-- **REST и документация:** REST API (JSON, валидные HTTP-коды, валидация, единый формат ошибок), Swagger / OpenAPI (springdoc-openapi)  
-- **Данные:** Spring Data JPA, PostgreSQL, H2, миграции с Flyway  
-- **Маппинг:** MapStruct (DTO ↔ сущности, разделение слоёв)  
-- **Тесты:** JUnit 5, Mockito, интеграционные тесты REST-контроллеров, Testcontainers (PostgreSQL + JUnit)  
-- **Инфраструктура:** Maven, Docker, docker-compose, GitHub Actions (CI: сборка + тесты), Spring Boot Actuator  
-- **Cloud / архитектура:** Spring Cloud Gateway, Netflix Eureka (Eureka Server + Eureka Client)
+Что реализовано:
+- регистрация пользователей
+- подтверждение регистрации через код
+- авторизация по логину и паролю
+- JWT access / refresh tokens
+- ролевая модель (`GUEST`, `USER`, `ADMIN`, `SUPER_ADMIN`)
+- Swagger UI
+- Flyway migrations
+- Docker / Docker Compose
+- unit + integration tests
 
----
+### [rent-apartment-app](https://github.com/s-u-p-e-r-m-a-n/rent-apartment-app)
+Основной backend-monorepo сервиса аренды жилья.  
+`spring-auth-service` вырос из этого проекта как отдельный showcase-ready сервис, а остальная платформа находится в активной разработке.
 
-## 🏗 Портфолио-проект: Rent Apartment
+* * *
 
-[`rent-apartment-app`](https://github.com/s-u-p-e-r-m-a-n/rent-apartment-app) — многомодульный сервис аренды жилья:
+## 🛠 Технологии
 
-- `architect-module` — схема БД и миграции Flyway  
-- `auth-module` — аутентификация и авторизация пользователей  
-  (JWT, роли, refresh-токены, email-подтверждение регистрации, Swagger UI)  
-- `rent_module` — работа с объектами аренды и бронью (CRUD, просмотр, поиск, бронирование)  
-- `product_module` — отдельный модуль для доменной логики товаров/объявлений  
-- `email-sender` — сервис отправки кодов подтверждения на email  
-- `api-getwey` — API Gateway (Spring Cloud Gateway + Eureka Client)  
-- `eureka-server` — сервис-дискавери для микросервисов
+- **Java / Spring:** Java 17, Spring Boot 3, Spring MVC
+- **Security:** Spring Security 6, JWT (access / refresh), роли, email-подтверждение
+- **REST / API:** REST API, валидация, единый формат ошибок, Swagger / OpenAPI
+- **Data:** Spring Data JPA, PostgreSQL, H2, Flyway
+- **Mapping:** MapStruct
+- **Testing:** JUnit 5, Mockito, Testcontainers
+- **Infrastructure:** Maven, Docker, Docker Compose, GitHub Actions
+- **Cloud / Architecture:** Spring Cloud Gateway, Eureka
 
-На этом проекте я демонстрирую:
+* * *
 
-- реализацию **ролей и безопасного доступа** к API (Spring Security 6 + JWT + refresh)  
-- проектирование и описание **REST API** с валидацией, единым форматом ошибок и документацией в Swagger / OpenAPI  
-- разделение на модули и подготовку к **микросервисной архитектуре** (Eureka Server, API Gateway, отдельные сервисы)  
-- работу с **реляционной БД** через JPA и миграции с Flyway  
-- использование **MapStruct** для разделения доменной модели и DTO  
-- написание **юнит- и интеграционных тестов** (в том числе с Testcontainers для PostgreSQL)  
-- **контейнеризацию** (Docker, docker-compose) и **CI в GitHub Actions** для сборки и прогона тестов
+## 🧩 Что умею делать
 
-Проект в активной разработке: по мере свободного времени добавляю новые сценарии и улучшаю архитектуру.
+- backend-сервисы на Java / Spring Boot
+- authentication / authorization
+- JWT, роли, защищённые endpoint'ы
+- REST API и CRUD-логику
+- PostgreSQL + Flyway migrations
+- Docker / Docker Compose
+- доработку существующего backend-кода
+- unit и integration tests
 
----
+* * *
+
+## 🏠 Rent Apartment App — активная разработка
+
+В основном monorepo развиваю платформу аренды жилья с многомодульной архитектурой.
+
+Ключевые части проекта:
+- `auth-module` — аутентификация и авторизация
+- `rent_module` — бизнес-логика аренды, объекты, комментарии, рейтинги, фото, интеграции
+- `email-sender` — отправка кодов подтверждения
+- `api-gateway` — единая точка входа
+- `eureka-server` — service discovery
+- `architect-module` — схема БД и миграции
+
+Проект использую как основную техническую базу для развития backend-архитектуры, доменной логики и новых сервисных сценариев.
+
+* * *
 
 ## 📫 Контакты
 
-Почта для рабочих предложений: **sergey.javadev@mail.ru**
+Почта для рабочих предложений: sergey.javadev@mail.ru
