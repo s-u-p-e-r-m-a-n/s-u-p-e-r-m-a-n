@@ -1,13 +1,15 @@
-# Привет, я Sergey
+# Привет, меня зовут Сергей!
 
-Java backend developer. Разрабатываю backend-сервисы и backend-модули на Spring Boot с упором на authentication, roles, REST API, PostgreSQL и Docker.
+Я Java backend-разработчик. Разрабатываю backend-сервисы и backend-модули на Spring Boot: REST API, бизнес-логика, PostgreSQL, Docker, интеграции с внешними API и тестирование.
+
+На GitHub отдельно показываю сервис авторизации auth-service на Spring Boot и основной многомодульный backend-проект rent-apartment-app с микросервисной архитектурой, бизнес-логикой, REST API, Gateway, Eureka, миграциями и интеграциями.
 
 * * *
 
 ## 🚀 Главная витрина
 
 ### [spring-auth-service](https://github.com/s-u-p-e-r-m-a-n/spring-auth-service)
-Standalone backend-сервис аутентификации и авторизации на Spring Boot.
+Отдельный backend-сервис аутентификации и авторизации на Spring Boot.
 
 Что реализовано:
 - регистрация пользователей
@@ -21,9 +23,17 @@ Standalone backend-сервис аутентификации и авториза
 - unit + integration tests
 
 ### [rent-apartment-app](https://github.com/s-u-p-e-r-m-a-n/rent-apartment-app)
-Основной backend-monorepo сервиса аренды жилья.  
-`spring-auth-service` вырос из этого проекта как отдельный showcase-ready сервис, а остальная платформа находится в активной разработке.
+Основной многомодульный backend-проект сервиса аренды жилья с микросервисной архитектурой.
+Что показывает проект:
 
+- отдельные сервисы и инфраструктурные модули
+- единый вход через API Gateway
+- service discovery через Eureka
+- REST API и доменную бизнес-логику
+- работу с PostgreSQL и миграциями
+- интеграции и сервисное взаимодействие
+- развитие backend-платформы через отдельные модули
+  
 * * *
 
 ## 🛠 Технологии
@@ -43,21 +53,25 @@ Standalone backend-сервис аутентификации и авториза
 
 ## Что умею делать
 
-* backend-сервисы на Java / Spring Boot
-* REST API и CRUD-логику
-* бизнес-логику и доработку существующего backend-кода
-* PostgreSQL + Flyway migrations
-* интеграции с внешними API
-* unit и integration tests
-* authentication / authorization
-* JWT, роли, защищённые endpoint'ы
-* Docker / Docker Compose
+## Что умею делать
+
+- backend-сервисы на Java / Spring Boot
+- REST API и CRUD-логику
+- бизнес-логику и доработку существующего backend-кода
+- PostgreSQL + Flyway migrations
+- интеграции с внешними API
+- unit и integration tests
+- authentication / authorization
+- JWT, роли, защищённые endpoint'ы
+- Docker / Docker Compose
+- API Gateway и service discovery
+- многомодульную и микросервисную backend-архитектуру
 
 * * *
 
 ## 🏠 Rent Apartment App — активная разработка
 
-В основном monorepo развиваю платформу аренды жилья с многомодульной архитектурой.
+В основном monorepo развиваю платформу аренды жилья с многомодульной backend-архитектурой и отдельными сервисами.
 
 Ключевые части проекта:
 - `auth-module` — аутентификация и авторизация
@@ -67,7 +81,7 @@ Standalone backend-сервис аутентификации и авториза
 - `eureka-server` — service discovery
 - `architect-module` — схема БД и миграции
 
-Проект использую как основную техническую базу для развития backend-архитектуры, доменной логики и новых сервисных сценариев.
+Проект использую как основную техническую базу для развития backend-архитектуры, доменной логики, интеграций и новых сервисных сценариев.
 
 * * *
 
