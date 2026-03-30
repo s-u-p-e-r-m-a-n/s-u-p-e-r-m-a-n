@@ -41,14 +41,17 @@ Standalone backend-сервис аутентификации и авториза
 
 ## 🧩 Что умею делать
 
-- backend-сервисы на Java / Spring Boot
-- authentication / authorization
-- JWT, роли, защищённые endpoint'ы
-- REST API и CRUD-логику
-- PostgreSQL + Flyway migrations
-- Docker / Docker Compose
-- доработку существующего backend-кода
-- unit и integration tests
+## Что умею делать
+
+* backend-сервисы на Java / Spring Boot
+* REST API и CRUD-логику
+* бизнес-логику и доработку существующего backend-кода
+* PostgreSQL + Flyway migrations
+* интеграции с внешними API
+* unit и integration tests
+* authentication / authorization
+* JWT, роли, защищённые endpoint'ы
+* Docker / Docker Compose
 
 * * *
 
