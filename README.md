@@ -61,7 +61,7 @@ Telegram-бот для приёма заявок от клиентов.
 - **Testing:** JUnit 5, Mockito, Testcontainers
 - **Infrastructure:** Maven, Docker, Docker Compose, GitHub Actions
 - **Cloud / Architecture:** Spring Cloud Gateway, Eureka
-- ** Telegram: Telegram Bot API, long polling, admin-команды, уведомления
+- *Telegram: Telegram Bot API, long polling, admin-команды, уведомления
   
 * * *
 
