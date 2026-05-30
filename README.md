@@ -61,22 +61,23 @@ Telegram-бот для приёма заявок от клиентов.
 - **Testing:** JUnit 5, Mockito, Testcontainers
 - **Infrastructure:** Maven, Docker, Docker Compose, GitHub Actions
 - **Cloud / Architecture:** Spring Cloud Gateway, Eureka
-
+- ** Telegram: Telegram Bot API, long polling, admin-команды, уведомления
+  
 * * *
 
 ## 🧩 Что умею делать
 
-- backend-сервисы на Java / Spring Boot
-- REST API и CRUD-логику
-- бизнес-логику и доработку существующего backend-кода
-- PostgreSQL + Flyway migrations
-- интеграции с внешними API
-- unit и integration tests
-- authentication / authorization
-- JWT, роли, защищённые endpoint'ы
-- Docker / Docker Compose
-- API Gateway и service discovery
-- многомодульную и микросервисную backend-архитектуру
+- Разрабатывать backend-сервисы на Java / Spring Boot
+- Проектировать REST API и серверную бизнес-логику
+- Настраивать авторизацию и роли: Spring Security, JWT, refresh tokens
+- Работать с PostgreSQL, JPA/Hibernate, Flyway migrations
+- Разрабатывать Telegram-ботов для бизнес-задач: заявки, уведомления, admin-команды, хранение данных в БД
+- Интегрировать backend с внешними API и сервисами
+- Документировать API через Swagger / OpenAPI
+- Упаковывать приложения в Docker / Docker Compose
+- Писать unit- и integration-тесты
+- Настраивать GitHub Actions CI для сборки и проверки проекта
+
 
 * * *
 
