@@ -2,7 +2,7 @@
 
 Я Java backend-разработчик. Разрабатываю backend-сервисы и backend-модули на Spring Boot: REST API, бизнес-логика, PostgreSQL, Docker, интеграции с внешними API и тестирование.
 
-На GitHub отдельно показываю сервис авторизации auth-service на Spring Boot и основной многомодульный backend-проект rent-apartment-app с микросервисной архитектурой, бизнес-логикой, REST API, Gateway, Eureka, миграциями и интеграциями.
+На GitHub отдельно показываю сервис авторизации на Spring Boot, Telegram-бота для приёма заявок бизнеса и основной многомодульный backend-проект rent-apartment-app с микросервисной архитектурой, бизнес-логикой, REST API, Gateway, Eureka, миграциями и интеграциями.
 
 * * *
 
@@ -21,6 +21,21 @@
 - Flyway migrations
 - Docker / Docker Compose
 - unit + integration tests
+
+### [telegram-lead-bot](https://github.com/s-u-p-e-r-m-a-n/telegram-lead-bot)
+
+Telegram-бот для приёма заявок от клиентов.
+
+Что реализовано:
+
+* сценарий сбора заявки через Telegram
+* сохранение заявок в PostgreSQL
+* уведомление администратора о новой заявке
+* admin-команды для просмотра последних заявок
+* базовая статистика
+* Flyway migrations
+* Docker / Docker Compose
+* unit tests
 
 ### [rent-apartment-app](https://github.com/s-u-p-e-r-m-a-n/rent-apartment-app)
 Основной многомодульный backend-проект сервиса аренды жилья с микросервисной архитектурой.
