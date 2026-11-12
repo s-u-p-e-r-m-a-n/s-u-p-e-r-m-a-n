@@ -1,102 +1,94 @@
-# Привет, меня зовут Сергей!
+# Сергей — Java Backend Developer
 
-Я Java backend-разработчик. Разрабатываю backend-сервисы и backend-модули на Spring Boot: REST API, бизнес-логика, PostgreSQL, Docker, интеграции с внешними API и тестирование.
+Разрабатываю веб-приложения, backend-сервисы и интеграции на **Java, Spring Boot и Spring Security**. Проектирую REST API, реализую бизнес-логику, аутентификацию и права доступа, работу с PostgreSQL и взаимодействие с внешними системами.
 
-На GitHub отдельно показываю сервис авторизации на Spring Boot, Telegram-бота для приёма заявок бизнеса и основной многомодульный backend-проект rent-apartment-app с микросервисной архитектурой, бизнес-логикой, REST API, Gateway, Eureka, миграциями и интеграциями.
+Работаю над полным сценарием приложения — от модели данных и серверной логики до пользовательского интерфейса, тестирования и развёртывания. Для веб-интерфейсов использую React и TypeScript.
 
-* * *
+Интересуют разработка новых продуктов и развитие существующих систем, технически содержательные задачи и сотрудничество с командами. Среди направлений — backend, API-интеграции, автоматизация бизнес-процессов и приложения для работы с заказами и данными.
 
-## 🚀 Главная витрина
+## Что делаю
 
-### [spring-auth-service](https://github.com/s-u-p-e-r-m-a-n/spring-auth-service)
-Отдельный backend-сервис аутентификации и авторизации на Spring Boot.
+- **Backend и API** — разработка сервисов на Spring Boot, REST API, бизнес-логика, валидация запросов, обработка ошибок и документация OpenAPI.
+- **Аутентификация и доступ** — Spring Security, JWT access/refresh tokens, ротация токенов, роли и защита эндпоинтов.
+- **Данные** — проектирование сущностей и связей, PostgreSQL, JPA/Hibernate, транзакции и миграции Flyway.
+- **Интеграции** — подключение внешних API, обмен данными, платёжные сценарии, Telegram-боты и уведомления.
+- **Обработка заказов** — расчёт стоимости, резервирование остатков, управление статусами и идемпотентность операций.
+- **Веб-интерфейсы** — React, TypeScript, пользовательские страницы и административные панели.
+- **Тестирование и поставка** — unit- и integration-тесты, Docker Compose, настройка CI в GitHub Actions.
 
-Что реализовано:
-- регистрация пользователей
-- подтверждение регистрации через код
-- авторизация по логину и паролю
-- JWT access / refresh tokens
-- ролевая модель (`GUEST`, `USER`, `ADMIN`, `SUPER_ADMIN`)
-- Swagger UI
-- Flyway migrations
-- Docker / Docker Compose
-- unit + integration tests
+## Технологии
 
-### [telegram-lead-bot](https://github.com/s-u-p-e-r-m-a-n/telegram-lead-bot)
+| Направление | Стек |
+|---|---|
+| Java / Spring | Java 17, Spring Boot 3, Spring MVC, Spring Security 6, Spring Data JPA |
+| API и безопасность | REST, HTTP, JWT, Bean Validation, Swagger / OpenAPI |
+| Базы данных | PostgreSQL, Hibernate, Flyway, H2 |
+| Тестирование | JUnit 5, Mockito, Testcontainers, JaCoCo |
+| Frontend | React, TypeScript, Vite |
+| Интеграции | Telegram Bot API, Telegram Mini Apps, ЮKassa API |
+| Сборка и инфраструктура | Git, Maven, Docker, Docker Compose, Nginx, GitHub Actions |
+| Микросервисы | Spring Cloud Gateway, Eureka, межсервисное взаимодействие |
 
-Telegram-бот для приёма заявок от клиентов.
+## Избранные проекты
 
-Что реализовано:
+### [Telegram Mini App Shop](https://github.com/s-u-p-e-r-m-a-n/telegram-miniapp-shop)
 
-* сценарий сбора заявки через Telegram
-* сохранение заявок в PostgreSQL
-* уведомление администратора о новой заявке
-* admin-команды для просмотра последних заявок
-* базовая статистика
-* Flyway migrations
-* Docker / Docker Compose
-* unit tests
+Система продаж, объединяющая **Mini App, Telegram-бота, Java backend и веб-панель управления**.
 
-### [rent-apartment-app](https://github.com/s-u-p-e-r-m-a-n/rent-apartment-app)
-Основной многомодульный backend-проект сервиса аренды жилья с микросервисной архитектурой.
-Что показывает проект:
+Покупатель выбирает товары, оформляет заказ и получает уведомления. Администратор управляет каталогом, остатками и заказами, меняет статусы и связывается с клиентом.
 
-- отдельные сервисы и инфраструктурные модули
-- единый вход через API Gateway
-- service discovery через Eureka
-- REST API и доменную бизнес-логику
-- работу с PostgreSQL и миграциями
-- интеграции и сервисное взаимодействие
-- развитие backend-платформы через отдельные модули
-  
-* * *
+Техническая часть:
 
-## 🛠 Технологии
+- серверный расчёт суммы заказа и резервирование товаров;
+- транзакции и блокировки при изменении остатков;
+- идемпотентность создания заказа и оплаты;
+- интеграция с Invoice API ЮKassa и фоновая сверка состояния счетов;
+- проверка подписи Telegram initData и принадлежности заказа пользователю;
+- административный доступ через Spring Security;
+- React-интерфейсы витрины и панели управления;
+- Flyway, Docker Compose, Nginx и GitHub Actions.
 
-- **Java / Spring:** Java 17, Spring Boot 3, Spring MVC
-- **Security:** Spring Security 6, JWT (access / refresh), роли, email-подтверждение
-- **REST / API:** REST API, валидация, единый формат ошибок, Swagger / OpenAPI
-- **Data:** Spring Data JPA, PostgreSQL, H2, Flyway
-- **Mapping:** MapStruct
-- **Testing:** JUnit 5, Mockito, Testcontainers
-- **Infrastructure:** Maven, Docker, Docker Compose, GitHub Actions
-- **Cloud / Architecture:** Spring Cloud Gateway, Eureka
-- **Telegram-боты** — заявки, уведомления, admin-команды, хранение данных в PostgreSQL
-  
-* * *
+**Стек:** Java, Spring Boot, Spring Security, PostgreSQL, JPA/Hibernate, React, TypeScript, Telegram Bot API, ЮKassa API.
 
-## 🧩 Что умею делать
+### [Spring Auth Service](https://github.com/s-u-p-e-r-m-a-n/spring-auth-service)
 
-- Разрабатывать backend-сервисы на Java / Spring Boot
-- Проектировать REST API и серверную бизнес-логику
-- Настраивать авторизацию и роли: Spring Security, JWT, refresh tokens
-- Работать с PostgreSQL, JPA/Hibernate, Flyway migrations
-- Разрабатывать Telegram-ботов для бизнес-задач: заявки, уведомления, admin-команды, хранение данных в БД
-- Интегрировать backend с внешними API и сервисами
-- Документировать API через Swagger / OpenAPI
-- Упаковывать приложения в Docker / Docker Compose
-- Писать unit- и integration-тесты
-- Настраивать GitHub Actions CI для сборки и проверки проекта
+Сервис аутентификации и авторизации на **Spring Boot и Spring Security**.
 
+- Регистрация и подтверждение через код.
+- JWT access/refresh tokens и ротация refresh-токенов.
+- Ролевая модель и административные API.
+- Валидация DTO и централизованная обработка ошибок.
+- PostgreSQL и миграции Flyway.
+- Swagger / OpenAPI.
+- Unit- и integration-тесты с JUnit, Mockito и Testcontainers.
+- Профили запуска и Docker Compose.
 
-* * *
+### [Telegram Lead Bot](https://github.com/s-u-p-e-r-m-a-n/telegram-lead-bot)
 
-## 🏠 Rent Apartment App — активная разработка
+Бот для приёма и обработки клиентских заявок.
 
-В основном monorepo развиваю платформу аренды жилья с многомодульной backend-архитектурой и отдельными сервисами.
+Пошагово собирает данные клиента, сохраняет заявку в PostgreSQL и отправляет уведомление администратору. Предусмотрены просмотр последних заявок, базовая статистика, миграции базы и unit-тесты.
 
-Ключевые части проекта:
-- `auth-module` — аутентификация и авторизация
-- `rent_module` — бизнес-логика аренды, объекты, комментарии, рейтинги, фото, интеграции
-- `email-sender` — отправка кодов подтверждения
-- `api-gateway` — единая точка входа
-- `eureka-server` — service discovery
-- `architect-module` — схема БД и миграции
+**Стек:** Java, Spring Boot, Spring Data JPA, PostgreSQL, Flyway, Docker Compose.
 
-Проект использую как основную техническую базу для развития backend-архитектуры, доменной логики, интеграций и новых сервисных сценариев.
+### [Rent Apartment App](https://github.com/s-u-p-e-r-m-a-n/rent-apartment-app)
 
-* * *
+Многомодульный проект, демонстрирующий микросервисную архитектуру backend-приложения.
 
-## 📫 Контакты
+Отдельные сервисы авторизации и бизнес-логики аренды, маршрутизация через **Spring Cloud Gateway**, обнаружение сервисов через **Eureka**, REST API, PostgreSQL и интеграция с внешним API геолокации.
 
-Почта для рабочих предложений: sergey.javadev@mail.ru
+Подробности реализации и текущий статус модулей — в README репозитория.
+
+## Работа и сотрудничество
+
+Открыт к проектной и частичной занятости, сотрудничеству с продуктовыми командами, студиями и интеграторами.
+
+Рассматриваю разработку отдельных сервисов и модулей, API-интеграции, доработку Java-приложений и создание веб-приложений с backend и пользовательским интерфейсом.
+
+Объём, сроки, загрузку и порядок взаимодействия согласуем под задачи проекта.
+
+## Контакты
+
+**Сергей · Липецк · удалённое сотрудничество**
+
+[sergey.javadev@mail.ru](mailto:sergey.javadev@mail.ru)
