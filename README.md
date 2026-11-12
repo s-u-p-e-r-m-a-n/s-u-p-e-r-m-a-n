@@ -1,4 +1,4 @@
-# Сергей — Java Backend Developer
+# Привет, меня зовут Сергей, я Java Backend Developer
 
 Разрабатываю веб-приложения, backend-сервисы и интеграции на **Java, Spring Boot и Spring Security**. Проектирую REST API, реализую бизнес-логику, аутентификацию и права доступа, работу с PostgreSQL и взаимодействие с внешними системами.
 
